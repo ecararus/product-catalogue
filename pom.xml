@@ -25,7 +25,7 @@
         <start-class>com.eca.CatalogueAppConfiguration</start-class>
         <java.version>1.8</java.version>
 
-        <embed.mongo.version>1.50.3</embed.mongo.version>
+        <embed.mongo.version>1.50.5</embed.mongo.version>
         <swagger.version>2.4.0</swagger.version>
         <guava.version>19.0</guava.version>
         <auto-value.version>1.2</auto-value.version>
