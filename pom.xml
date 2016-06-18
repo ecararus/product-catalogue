@@ -45,7 +45,7 @@
         <jacoco-maven.version>0.7.7.201606060606</jacoco-maven.version>
         <skip.integration.tests>false</skip.integration.tests>
         <skip.unit.tests>false</skip.unit.tests>
-        <coveralls.version>4.1.0</coveralls.version>
+        <coveralls.version>4.2.0</coveralls.version>
 
     </properties>
 
