@@ -4,16 +4,12 @@ import com.eca.catalogue.facade.CatalogueService;
 import com.eca.catalogue.product.vo.ProductVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-@Configuration
-@EnableAutoConfiguration
+@SpringBootApplication
 @EnableSwagger2
-@ComponentScan
 public class CatalogueAppConfiguration implements CommandLineRunner {
 
     @SuppressWarnings("unused")
@@ -21,7 +17,7 @@ public class CatalogueAppConfiguration implements CommandLineRunner {
     private CatalogueService catalogueService;
 
     public static void main(String[] args) {
-        SpringApplication.run(CatalogueAppConfiguration.class, args);
+        new SpringApplicationBuilder(CatalogueAppConfiguration.class).web(true).run(args);
     }
 
     /**
